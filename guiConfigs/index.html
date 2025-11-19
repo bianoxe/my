@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики-нолики с ботом</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Крестики-нолики</h1>
+        
+        <div class="game-info">
+            <div class="score">
+                <span>Игрок: <span id="player-score">0</span></span>
+                <span>Бот: <span id="bot-score">0</span></span>
+                <span>Ничьи: <span id="draw-score">0</span></span>
+            </div>
+            <div class="status" id="status">Ваш ход (X)</div>
+        </div>
+
+        <div class="game-board" id="board">
+            <!-- Игровое поле будет создано через JavaScript -->
+        </div>
+
+        <div class="controls">
+            <button id="restart">🔄 Новая игра</button>
+            <button id="change-difficulty">⚙️ Сложность</button>
+        </div>
+
+        <div class="difficulty-selector hidden" id="difficulty-selector">
+            <button data-difficulty="easy">😊 Легко</button>
+            <button data-difficulty="medium">😐 Средне</button>
+            <button data-difficulty="hard">😡 Сложно</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
